@@ -4,11 +4,18 @@ This is the version controlled .vim folder used by me. I use this repo to port m
 
 ### How?
 
-To use this setups for vim, clone this repo to your local `$HOME` folder and create a symbolic link:
+To use this setups for vim, clone this repo to your local `$HOME` folder and run the make command
 
 ```bash
 git clone https://github.com/jiananlu/.vim.git ${HOME}
-ln -s ${HOME}/.vim/.vimrc ${HOME}/.vimrc
+make
+```
+
+If you have done this before and want start over, clean first before retry
+
+```bash
+make clean
+make
 ```
 
 ### Why?
