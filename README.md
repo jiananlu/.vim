@@ -7,7 +7,7 @@ This is the version controlled .vim folder used by me. I use this repo to port m
 To use this setups for vim, clone this repo to your local `$HOME` folder and run the make command
 
 ```bash
-git clone https://github.com/jiananlu/.vim.git ${HOME}
+git clone https://github.com/jiananlu/.vim.git ${HOME}/.vim
 make
 ```
 
