@@ -45,7 +45,7 @@ filetype plugin indent on    " required
 " shortcuts customized
 let mapleader="," " leader is comma
 nnoremap <leader>u :GundoToggle<CR>
-nnoremap <leader>a :Ag 
+nnoremap <leader>a :Ag
 
 " some basic behaviors of vim
 colorscheme muon
