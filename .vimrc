@@ -83,4 +83,3 @@ let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 
 " better-whitespace settings
 let g:strip_whitespace_on_save=1
-let g:better_whitespace_filetypes_blacklist=['.vim']
