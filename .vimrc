@@ -20,6 +20,7 @@ Plugin 'rking/ag.vim' " the silver search plugin for faster 'grep'
 Plugin 'sjl/gundo.vim' " a graph display of vim undo tree
 Plugin 'ctrlpvim/ctrlp.vim' " the famous ctrl-p plugin. use the actively maintained git repo
 Plugin 'tpope/vim-fugitive' " git plugin
+Plugin 'ntpeters/vim-better-whitespace' " better handle trailing whitespaces
 
 " editing enhancement
 Plugin 'Townk/vim-autoclose' " autocomplete the parenthese
@@ -45,7 +46,10 @@ filetype plugin indent on    " required
 " shortcuts customized
 let mapleader="," " leader is comma
 nnoremap <leader>u :GundoToggle<CR>
-nnoremap <leader>a :Ag
+nnoremap <leader>/ :Ag
+nnoremap <leader>v :vnew<CR>
+nnoremap <leader>h :new<CR>
+nnoremap <leader><space> :nohlsearch<CR> " shortcut to turn off search highlight
 
 " some basic behaviors of vim
 colorscheme muon
@@ -67,7 +71,6 @@ set incsearch " search while typing
 set hlsearch " highlight search matches
 set ignorecase " search ignore case
 set smartcase " case sensitive if you input cap letter, otherwise ignore case
-nnoremap <leader><space> :nohlsearch<CR> " shortcut to turn off search highlight
 
 " misc things
 set lazyredraw " redraw only when needed
@@ -77,3 +80,7 @@ let g:ctrlp_match_window='bottom,order:ttb,min:1,max:10,results:100'
 let g:ctrlp_switch_buffer=0
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
+
+" better-whitespace settings
+let g:strip_whitespace_on_save=1
+let g:better_whitespace_filetypes_blacklist=['.vim']
