@@ -21,6 +21,7 @@ Plugin 'sjl/gundo.vim' " a graph display of vim undo tree
 Plugin 'ctrlpvim/ctrlp.vim' " the famous ctrl-p plugin. use the actively maintained git repo
 Plugin 'tpope/vim-fugitive' " git plugin
 Plugin 'ntpeters/vim-better-whitespace' " better handle trailing whitespaces
+Plugin 'scrooloose/nerdtree' " file explorer
 
 " editing enhancement
 Plugin 'Townk/vim-autoclose' " autocomplete the parenthese
@@ -50,6 +51,7 @@ nnoremap <leader>/ :Ag
 nnoremap <leader>v :vnew<CR>
 nnoremap <leader>h :new<CR>
 nnoremap <leader><space> :nohlsearch<CR> " shortcut to turn off search highlight
+nnoremap <leader>k :NERDTreeToggle<CR> " open/close file explorer
 
 " some basic behaviors of vim
 colorscheme muon
